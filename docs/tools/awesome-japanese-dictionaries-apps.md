@@ -70,6 +70,10 @@
 
 这个实际上要与 Anki 搭配使用，上手难度极大。
 
+### [Tomoshi 日语词典](https://tomoshi.app)
+
+自带离线词典数据、装完即用的日语词典 App，Android 版已上架 Google Play（大陆用户可从腾讯应用宝安装），另有 iPhone 版与 Windows / macOS 桌面版。功能与桌面版一致，详见下方「Windows 端」一节。
+
 ## Windows 端
 
 之前介绍的词典软件大都由有自己的网页版，在电脑上都能用。
@@ -107,6 +111,20 @@
 
 相关评价和教程在[README.md](https://github.com/NoHeartPen/awesome-japanese-study-tools/tree/master/tools/goldendict_for_japnese_portable/)。
 
+### [Tomoshi 日语词典](https://tomoshi.app)
+
+与上面几款「外壳 + 自备词典文件」的软件不同，Tomoshi 自带词典数据，装完即用，不需要导入任何词典。提供 Windows、macOS、Android 与 iPhone 版：桌面版从官网下载（Windows 也可从微软商店安装），Android 版上架 Google Play，iPhone 版上架 App Store；大陆用户可从境内站 [tomoshi.cn](https://tomoshi.cn) 下载桌面包，Android 版上架腾讯应用宝，iPhone 版上架中国区 App Store。
+
+特点：
+
+1. 核心查词完全离线，词典数据本地存储；查词记录不上传，查词不需要注册账号
+2. 面向「说对、写对」的产出型功能：自他动词配对、近义词辨析、中日反查、口语/书面语对应
+3. 词条附重音（音高）信息，常用词发音按使用频率持续人工核验
+4. 支持用言活用形还原（输入「食べなかった」可查到「食べる」）
+5. 云端朗读与 AI 释义扩展是联网功能，目前免费、有每日限额，作者已声明未来将转为付费以覆盖成本；**AI 释义扩展只在国际版提供，大陆版不含**。查词本身永久免费
+
+基础释义来自 JMdict 等开源项目；源自开放项目的数据及其中文释义、辨析卡片按表以 CC BY-SA 等开放许可公开下载（[tomoshi-app/tomoshi-dict-data](https://github.com/tomoshi-app/tomoshi-dict-data)）。桌面应用本体暂未开源。
+
 ## 浏览器拓展
 
 推荐使用 Microsoft Edge 浏览器，兼容 Chrome 的拓展，不用 FQ
@@ -128,3 +146,13 @@
 由于都是国外开发者开发，所以干脆放在一起说。
 
 上手难度都比较大，作者也没怎么仔细研究，只是简单体验了下。由于是专门为了日语学习而设计，所以有些细节做得比沙拉查词好: 比如 Yomichan 除了可以与 Anki 搭配，还可以导入 EBwin 格式的词典，对于动词活用变形也有一定的支持。
+
+### [Tomoshi 取词扩展](https://tomoshi.app/extensions/)
+
+Tomoshi 桌面应用配套的划词取词扩展，**需要先启动 Tomoshi 桌面应用**——扩展只是前端，查询由本地桌面应用提供，因此整个取词过程离线完成、不经过任何服务器。
+
+用法：选中日语文本后按住 Alt（可改为 Ctrl / Shift），页面内弹出悬浮窗显示释义、音高图、语法兜底与发音按钮，松开即关闭。支持用言活用形还原。
+
+- Chrome 应用商店 / Microsoft Edge 加载项商店均有上架（Brave、Vivaldi 等 Chromium 系浏览器可用 Chrome 版）；Edge 加载项商店大陆可直接访问，Chrome 应用商店不可达时可从 [tomoshi.cn](https://tomoshi.cn) 下载离线包以「加载已解压的扩展程序」方式安装
+- Safari 版随 macOS 桌面应用一并安装，在 Safari 扩展设置里启用
+- 扩展以 AGPL-3.0 开源：[tomoshi-app/tomoshi-extension](https://github.com/tomoshi-app/tomoshi-extension)
